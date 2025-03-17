@@ -23,7 +23,7 @@ export class UserService {
       where: { name: name },
     });
   
-    return !!existingUser; // Retorna true se o usuário existir, false se não existir
+    return !!existingUser;
   }
 
 

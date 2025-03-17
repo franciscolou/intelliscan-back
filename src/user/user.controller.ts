@@ -22,3 +22,6 @@ export class UserController {
     return this.userService.findById(id);
   }
 }
+
+// This file doesn't have to exist since its delegations are handled by Auth entity.
+// However, it's a good practice to have a controller for each entity, which is why it is being kept here.

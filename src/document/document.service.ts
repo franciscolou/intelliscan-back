@@ -39,10 +39,7 @@ export class DocumentService {
     return new Promise<string>((resolve, reject) => {
       Tesseract.recognize(
         imageBuffer,
-        'eng',
-        {
-          logger: (m) => console.log(m),
-        }
+        'eng'
       )
         .then(({ data: { text } }) => {
           resolve(text);

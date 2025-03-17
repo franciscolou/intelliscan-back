@@ -74,7 +74,6 @@ export class ChatService {
         }
       });
     
-      // Aqui chamamos o service de Document para realizar a atualização
       await this.documentService.update(userId, createChatDto.documentId, {
         lastActivity: new Date(),
       });
