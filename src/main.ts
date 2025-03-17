@@ -8,6 +8,7 @@ async function bootstrap() {
     origin: 'https://intelliscan-inky.vercel.app',
     methods: 'GET, POST, PATCH, DELETE, OPTIONS, HEAD, TRACE, CONNECT',
     allowedHeaders: 'Content-Type, Accept, Authorization',
+    credentials: true
   });
 
   await app.listen(process.env.PORT ?? 4000);
