@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: '',
+    origin: 'https://intelliscan-inky.vercel.app',
     methods: 'GET, POST, PATCH, DELETE',
     allowedHeaders: 'Content-Type, Accept, Authorization',
   });
