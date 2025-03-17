@@ -6,7 +6,7 @@ async function bootstrap() {
 
   app.enableCors({
     origin: 'https://intelliscan-inky.vercel.app',
-    methods: 'GET, POST, PATCH, DELETE',
+    methods: 'GET, POST, PATCH, DELETE, OPTIONS',
     allowedHeaders: 'Content-Type, Accept, Authorization',
   });
 
